@@ -13,3 +13,9 @@ rand_str(key, KEY_LEN);
 ```
 
 The `rand_str` function generates a random string of characters and stores it in the `key` variable. The `key` variable holds the generated encryption key throughout the execution of the program. This key is then passed to the `encrypt_file` function to perform encryption on files using the XOR operation. And as the 'rand_str' function is defined in the local scope, the memory of the variable will be deallocated after the scope.
+
+2) What's the purpose of <elf.h>?
+
+`<elf.h>` is a header file that is used to work with ELF (Executable and Linkable Format) files. ELF is a common file format for executables, object code, shared libraries, and even some kernel modules in Unix-like operating systems.
+
+The ELF format specifies the structure of executable files, including header information, program and section headers, and data segments. It's used to organize and describe the components of executable files, making it possible for the operating system to load and execute programs.
