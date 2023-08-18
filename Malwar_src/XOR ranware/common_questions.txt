@@ -1,0 +1,15 @@
+Common Questions:
+
+1) Where the Encryption key is stored?
+
+The encryption key is generated using the `rand_str` function and stored in the `key` variable. The key is generated dynamically at runtime and is stored in memory:
+
+```c
+char *key;
+
+/* Generate and allocate memory for the encryption key */
+key = (char *) alloca(KEY_LEN * sizeof(char));
+rand_str(key, KEY_LEN);
+```
+
+The `rand_str` function generates a random string of characters and stores it in the `key` variable. The `key` variable holds the generated encryption key throughout the execution of the program. This key is then passed to the `encrypt_file` function to perform encryption on files using the XOR operation. And as the 'rand_str' function is defined in the local scope, the memory of the variable will be deallocated after the scope.
