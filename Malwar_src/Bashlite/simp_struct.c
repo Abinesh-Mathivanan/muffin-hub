@@ -1,3 +1,5 @@
+// The below code provides the simpler version of the client_net.c file //
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
