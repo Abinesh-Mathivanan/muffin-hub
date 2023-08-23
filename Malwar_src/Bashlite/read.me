@@ -1,0 +1,38 @@
+## Introduction
+This folder contains the source code for a simple Distributed Denial of Service (DDoS) botnet implemented in C. The botnet consists of a client and a server component.
+
+**Disclaimer:** This project is intended for educational purposes only. Unauthorized use of this code for malicious activities is strictly prohibited.
+
+## Prerequisites
+- Basic knowledge of C programming language.
+- A Linux-based environment (Ubuntu recommended).
+- GCC compiler for C.
+
+## Files
+- `client_net.c`: The client-side code for the botnet. This program connects to the server, receives commands, and carries out DDoS attacks.
+- `server_comm.c`: The server-side code that controls the botnet. It listens for incoming connections from client bots and issues commands.
+
+## Compilation and Execution
+1. Navigate to the directory containing the source code files.
+2. Run the provided bash script to compile and execute the botnet components:
+
+install.sh
+
+This script will compile both `client_net.c` and `server_comm.c`, run them in the background, and clean up after execution.
+
+## Usage
+1. Run the compiled `server_comm` binary to start the server component of the botnet. The server will listen for incoming connections from client bots.
+2. The compiled `client_net` binary will connect to the server and await commands. The botnet operator can issue commands to perform DDoS attacks or other actions.
+
+## Important Note
+This project is provided as-is and is meant for educational purposes only. The use of this code for malicious activities is illegal and unethical. The author is not responsible for any consequences that arise from the misuse of this code.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+This project was inspired by educational purposes to understand botnets and cybersecurity. Thanks to the open-source community for providing resources and knowledge on the subject.
+
+---
+
+**Please use this project responsibly and only for educational purposes.** If you have any questions or concerns, feel free to contact the author.
